@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Francophone" />
+    <item
+        android:id="@+id/store"
+        android:icon="@drawable/baseline_store_24"
+        android:title="Anglophone" />
+
+    <item
+        android:id="@+id/setting"
+        android:icon="@drawable/baseline_menu_book_24"
+        android:title="Cahiers/Outils" />
+    <item
+        android:id="@+id/commande"
+        android:icon="@drawable/baseline_shopping_basket_24"
+        android:title="Commande" />
+
+
+
+</menu>

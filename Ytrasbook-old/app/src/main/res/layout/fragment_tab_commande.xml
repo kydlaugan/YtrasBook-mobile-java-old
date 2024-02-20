@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".TabCommande">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Votre Panier "
+            android:textSize="15sp"
+            android:textColor="@color/colorOrange"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="65dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_horizontal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:divider="@null"
+                android:layout_height="375dp"
+                android:scrollbars="vertical"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Net à payer  : "
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/somme"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:textSize="17sp"
+                android:textColor="#ED4712"
+                android:gravity="center"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Franc FCA"
+                android:textSize="20sp"
+                android:textColor="#ED4712"
+                android:layout_marginStart="8dp"
+                android:textStyle="italic"/>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/commande"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Commander"
+            android:layout_marginHorizontal="30dp"
+            android:textColor="@color/white"
+            android:background="@drawable/background"
+            android:layout_marginTop="30dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vos anciennes commandes  "
+            android:textSize="15sp"
+            android:textColor="@color/colorOrange"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="65dp"
+            android:layout_marginBottom="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ListView
+                android:id="@+id/liste1"
+                android:layout_width="match_parent"
+                android:divider="@null"
+                android:layout_height="730dp"
+                android:scrollbars="vertical"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

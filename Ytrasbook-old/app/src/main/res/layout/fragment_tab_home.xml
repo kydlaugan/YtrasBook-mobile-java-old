@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".TabHome">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingClass">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:focusable="true"
+            android:layout_marginHorizontal="30dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="75dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/image_slider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:iss_auto_cycle="true"
+                    app:iss_period="1000"
+                    app:iss_delay="1000"
+                    app:iss_text_align="CENTER"
+                    app:iss_corner_radius="30"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/categorie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Livres de Mathematiques "
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textAlignment="textStart"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/voirplus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorOrange"
+                android:textStyle="bold"
+                android:text="Voir Plus "/>
+
+        </LinearLayout>
+
+
+        <GridView
+            android:id="@+id/listviewperso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:scrollbars="none"
+            android:numColumns="3">
+        </GridView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/categorie1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Livres de Physique / chmie "
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textAlignment="textStart"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/voirplus1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorOrange"
+                android:textStyle="bold"
+                android:text="Voir Plus "/>
+
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/listviewperso1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:scrollbars="none"
+            android:numColumns="3">
+
+        </GridView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:focusable="true"
+            android:layout_marginHorizontal="30dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="25dp"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardElevation="20dp">
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/image_slider1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:iss_auto_cycle="true"
+                app:iss_period="1000"
+                app:iss_delay="1000"
+                app:iss_text_align="CENTER"
+                app:iss_corner_radius="30"/>
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/categorie2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Livres d' informatiques "
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textAlignment="textStart"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/voirplus2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorOrange"
+                android:textStyle="bold"
+                android:text="Voir Plus "/>
+
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/listviewperso2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:scrollbars="none"
+            android:numColumns="3">
+
+        </GridView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/categorie3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Livres d' SVT "
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textAlignment="textStart"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/voirplus3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorOrange"
+                android:textStyle="bold"
+                android:text="Voir Plus "/>
+
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/listviewperso3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:scrollbars="none"
+            android:numColumns="3">
+
+        </GridView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:focusable="true"
+            android:layout_marginHorizontal="30dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="25dp"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardElevation="20dp">
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/image_slider2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:iss_auto_cycle="true"
+                app:iss_period="1000"
+                app:iss_delay="1000"
+                app:iss_text_align="CENTER"
+                app:iss_corner_radius="30"/>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/categorie4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Livres de Français "
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textAlignment="textStart"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/voirplus4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorOrange"
+                android:textStyle="bold"
+                android:text="Voir Plus "/>
+
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/listviewperso4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:scrollbars="none"
+            android:numColumns="3">
+
+        </GridView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/categorie5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Livres d'Anglais "
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textAlignment="textStart"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/voirplus5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorOrange"
+                android:textStyle="bold"
+                android:text="Voir Plus "/>
+
+        </LinearLayout>
+
+
+        <GridView
+            android:id="@+id/listviewperso5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:scrollbars="none"
+            android:numColumns="3">
+
+        </GridView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/categorie6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ECM / Histoires / Geographie "
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textAlignment="textStart"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/voirplus6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorOrange"
+                android:textStyle="bold"
+                android:text="Voir Plus "/>
+
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/listviewperso6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:scrollbars="none"
+            android:numColumns="3">
+
+        </GridView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:focusable="true"
+            android:layout_marginHorizontal="30dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="25dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/image_slider3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:iss_auto_cycle="true"
+                    app:iss_period="1000"
+                    app:iss_delay="1000"
+                    app:iss_text_align="CENTER"
+                    app:iss_corner_radius="30"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/categorie7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oeuvres Litteraires "
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textAlignment="textStart"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/voirplus7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorOrange"
+                android:textStyle="bold"
+                android:text="Voir Plus "/>
+
+        </LinearLayout>
+        <GridView
+            android:id="@+id/listviewperso7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:scrollbars="none"
+            android:numColumns="3">
+        </GridView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/categorie8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Langues Etrangère  "
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textAlignment="textStart"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/voirplus8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorOrange"
+                android:textStyle="bold"
+                android:text="Voir Plus "/>
+
+        </LinearLayout>
+
+
+        <GridView
+            android:id="@+id/listviewperso8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:scrollbars="none"
+            android:numColumns="3">
+        </GridView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/categorie9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Autres   "
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textAlignment="textStart"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/voirplus9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorOrange"
+                android:textStyle="bold"
+                android:text="Voir Plus "/>
+
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/listviewperso9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:scrollbars="none"
+            android:numColumns="3">
+        </GridView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:focusable="true"
+            android:layout_marginHorizontal="30dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="12dp"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardElevation="20dp">
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/image_slider4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:iss_auto_cycle="true"
+                app:iss_period="1000"
+                app:iss_delay="1000"
+                app:iss_text_align="CENTER"
+                app:iss_corner_radius="30"/>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

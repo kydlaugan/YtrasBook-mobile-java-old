@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/francophone"
+        android:icon="@drawable/baseline_store_24"
+        android:title="Maternelle" />
+    <item
+        android:id="@+id/anglophone"
+        android:icon="@drawable/baseline_store_24"
+        android:title="Primaire" />
+    <item
+        android:id="@+id/anglophone2"
+        android:icon="@drawable/baseline_store_24"
+        android:title="Secondaire" />
+    <item
+        android:id="@+id/anglophone3"
+        android:icon="@drawable/baseline_store_24"
+        android:title="Cahiers" />
+    <item
+        android:id="@+id/anglophone4"
+        android:icon="@drawable/baseline_store_24"
+        android:title="Accessoires" />
+    <item
+        android:id="@+id/anglophone5"
+        android:icon="@drawable/baseline_store_24"
+        android:title="Evenement" />
+</menu>

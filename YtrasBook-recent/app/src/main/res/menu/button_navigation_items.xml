@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/francophone"
+        android:icon="@drawable/baseline_store_24"
+        android:title="Francophones" />
+    <item
+        android:id="@+id/anglophone"
+        android:icon="@drawable/baseline_store_24"
+        android:title="Anglophones" />
+</menu>
